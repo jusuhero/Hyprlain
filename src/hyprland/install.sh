@@ -10,11 +10,6 @@ fi
 
 downdependencies "${GITSRC}/pacpkgs.lst" "${GITSRC}/aurpkgs.lst"
 
-getpkg zsh
-echo -e "${GREEN}When zsh opens a new shell, simply close it by typing 'exit'!${NOCOLOR}"; pause
-handleold "$BAKORDEL" "${HOME}/.oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 substitute "$BAKORDEL" "${HOME}/.config/wlogout/style.css" "${GITSRC}/wlogout/style.css"
 substitute "$BAKORDEL" "${HOME}/.config/waybar/config.jsonc" "${GITSRC}/waybar/config.jsonc"
 substitute "$BAKORDEL" "${HOME}/.config/waybar/power_menu.xml" "${GITSRC}/waybar/power_menu.xml"
@@ -34,6 +29,5 @@ substitute "$BAKORDEL" "${HOME}/.config/kitty/themes/hyprlain.conf-colors" "${GI
 cat "${GITSRC}/.profile" >> "${HOME}/.profile"
 DOTPROFILE_SHLINE="[[ -f ~/.profile ]] && . ~/.profile"
 echo "$DOTPROFILE_SHLINE" >> "${HOME}/.bashrc"
-echo "$DOTPROFILE_SHLINE" >> "${HOME}/.zshrc"
 
 echo -e "${GREEN}Hyprland Hyprlain theme installed successfully.${NOCOLOR}"

@@ -74,5 +74,5 @@ case $CASE in
 esac
 
 if ! [ -z "$COMMAND" ]; then
-	kitty -e zsh -c "$COMMAND"
+	kitty -e fish -c "$COMMAND"
 fi

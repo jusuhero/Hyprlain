@@ -1,0 +1,281 @@
+palette = "hyprlain"
+format = """
+$username$hostname$directory$git_branch$git_status$cmd_duration
+$jobs$character
+"""
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '@[$hostname](blue bold) '
+trim_at = "."
+disabled = false
+
+[character]                            
+success_symbol = "[󱞩](bold green) "    
+error_symbol = "[✗](bold red) "
+[directory]
+read_only = " "
+truncation_length = 10
+truncate_to_repo = true # truncates directory to root folder if in github repo
+style = "bold italic blue"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[aws]
+symbol = "󰸏 "
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[bun]
+format = '\[[$symbol($version)]($style)\]'
+
+[c]
+symbol = " "
+format = '\[[$symbol($version(-$name))]($style)\]'
+
+[cmake]
+format = '\[[$symbol($version)]($style)\]'
+
+[jobs]
+symbol = "⚙️ "
+style = "cyan"
+
+[cmd_duration]
+min_time = 500
+style = "yellow"
+format = '\[[⏱ $duration]($style)\]'
+
+[cobol]
+format = '\[[$symbol($version)]($style)\]'
+
+[conda]
+format = '\[[$symbol$environment]($style)\]'
+
+[crystal]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[daml]
+format = '\[[$symbol($version)]($style)\]'
+
+[dart]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+
+[docker_context]
+symbol = " "
+format = '\[[$symbol$context]($style)\]'
+
+[dotnet]
+symbol = "󰪮 "
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+
+[elixir]
+symbol = " "
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+
+[elm]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[erlang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[gcloud]
+symbol = " "
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[golang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[guix_shell]
+symbol = " "
+format = '\[[$symbol]($style)\]'
+
+[haskell]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[haxe]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[helm]
+symbol = "⎈ "
+format = '\[[$symbol($version)]($style)\]'
+
+[hg_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[java]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[julia]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[kotlin]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+symbol = "󱃾 "
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+
+[lua]
+symbol = "󰢱 "
+format = '\[[$symbol($version)]($style)\]'
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[meson]
+format = '\[[$symbol$project]($style)\]'
+
+[nim]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[nix_shell]
+symbol = " "
+format = '\[[$symbol$state( \($name\))]($style)\]'
+
+[nodejs]
+symbol = "󰎙 "
+format = '\[[$symbol($version)]($style)\]'
+
+[ocaml]
+symbol = " "
+format = '\[[$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'
+
+[opa]
+format = '\[[$symbol($version)]($style)\]'
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+[os]
+format = '\[[$symbol]($style)\]'
+
+[package]
+format = '\[[$symbol$version]($style)\]'
+
+[perl]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[php]
+symbol = "󰌟 "
+format = '\[[$symbol($version)]($style)\]'
+
+[pulumi]
+format = '\[[$symbol$stack]($style)\]'
+
+[purescript]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+symbol = " "
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[raku]
+format = '\[[$symbol($version-$vm_version)]($style)\]'
+
+[red]
+format = '\[[$symbol($version)]($style)\]'
+
+[ruby]
+symbol = "󰴭 "
+format = '\[[$symbol($version)]($style)\]'
+
+[rust]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[scala]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[spack]
+format = '\[[$symbol$environment]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]\]'
+
+[swift]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[terraform]
+symbol = " "
+format = '\[[$symbol$workspace]($style)\]'
+
+[time]
+format = '\[[$time]($style)\]'
+
+
+[vagrant]
+format = '\[[$symbol($version)]($style)\]'
+
+[vlang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[zig]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+# Hyprlain Starship palette
+
+[palettes.hyprlain]
+blue      = "#968C6E"
+red       = "#CE7688"
+green     = "#C1B48E"
+yellow    = "#C1B48E"
+cyan      = "#BA6A7B"
+magenta   = "#CE7688"
+white     = "#C1B48E"
+black     = "#1A1A1A"
+
+rosewater = "#C1B48E"
+flamingo  = "#CE7688"
+pink      = "#CE7688"
+mauve     = "#BA6A7B"
+maroon    = "#804654"
+peach     = "#C1B48E"
+teal      = "#BA6A7B"
+sky       = "#968C6E"
+sapphire  = "#968C6E"
+lavender  = "#CE7688"
+
+text      = "#C1B48E"
+subtext1  = "#B5A985"
+subtext0  = "#968C6E"
+
+overlay2  = "#7A7A7A"
+overlay1  = "#6A6A6A"
+overlay0  = "#5A5A5A"
+surface2  = "#3A3A3A"
+surface1  = "#2A2A2A"
+surface0  = "#1A1A1A"
+base      = "#000000"
+mantle    = "#000000"
+crust     = "#000000"
+

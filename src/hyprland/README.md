@@ -3,10 +3,6 @@
 ![](./wlogout.png)
 ![](./background.gif)
 
-## [‼️🚨⚠️ DISCLAIMER ⚠️🚨‼️](../../README.md)
-The installation also includes `oh-my-zsh`,
-which is not listed in any of the `*pkgs.lst` files.
-
 ## Credits
 [Most graphics come from **fauux**'s website.](../../README.md#fauux)
 Some SFX come from Lain's OST, which was [archived](https://archive.org/details/sukidesuost-lain) by **sukidesuost**.

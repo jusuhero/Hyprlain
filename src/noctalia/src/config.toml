@@ -1,0 +1,77 @@
+[theme]
+source = "custom"
+custom_palette = "Hyprlain"
+mode = "dark"
+
+[wallpaper]
+enabled = false
+
+[shell]
+corner_radius_scale = 0.0
+button_borders = false
+input_borders = false
+popup_borders = false
+card_borders = false
+popup_shadows = false
+settings_window_translucent = true
+font_family = "AdwaitaMono Nerd Font"
+
+[shell.panel]
+transparency_mode = "opaque"
+borders = false
+shadow = false
+
+[notification]
+background_opacity = 1.0
+border = true
+
+[bar]
+order = ["main"]
+
+[bar.main]
+position = "top"
+enabled = true
+auto_hide = false
+reserve_space = true
+layer = "top"
+thickness = 24
+background_opacity = 1.0
+border_width = 0.0
+shadow = false
+contact_shadow = false
+radius = 0
+radius_top_left = 0
+radius_top_right = 0
+radius_bottom_left = 0
+radius_bottom_right = 0
+margin_ends = 0
+margin_edge = 0
+padding = 4
+widget_spacing = 6
+hover_highlight = true
+scale = 1.0
+font_scale = 1.0
+font_weight = 700
+font_family = "AdwaitaMono Nerd Font"
+capsule = false
+color = "surface"
+
+start  = ["workspaces"]
+center = ["active_window"]
+end    = ["volume", "network", "clock", "tray", "session"]
+
+[widget.workspaces]
+style = "minimal"
+show_labels = true
+label_source = "id"
+focused_color = "primary"
+occupied_color = "secondary"
+empty_color = "surface_variant"
+
+[widget.tray]
+drawer = true
+drawer_columns = 4
+drawer_item_size = 16
+
+[widget.session]
+# Falls back to Noctalia session if wlogout is missing.

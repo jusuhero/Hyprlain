@@ -17,12 +17,20 @@ substitute "$BAKORDEL" "${HOME}/.local/share/audacious/Skins/lainampborders" "${
 echo "skin=${HOME}/.local/share/audacious/Skins/lainampborders" >> "${GITSRC}/audacious/config"
 substitute "$BAKORDEL" "${HOME}/.config/audacious/config" "${GITSRC}/audacious/config"
 
+substitute "$BAKORDEL" "${HOME}/.config/helix" "${GITSRC}/helix"
+substitute "$BAKORDEL" "${HOME}/.config/nvim" "${GITSRC}/nvim"
+substitute "$BAKORDEL" "${HOME}/.config/tmux" "${GITSRC}/tmux"
+substitute "$BAKORDEL" "${HOME}/.config/zathura" "${GITSRC}/zathura"
+substitute "$BAKORDEL" "${HOME}/.config/bat" "${GITSRC}/bat"
+substitute "$BAKORDEL" "${HOME}/.config/btop" "${GITSRC}/btop"
+substitute "$BAKORDEL" "${HOME}/.config/cava" "${GITSRC}/cava"
+substitute "$BAKORDEL" "${HOME}/.config/vifm" "${GITSRC}/vifm"
+
 echo -e "${YELLOW}To install the Firefox theme, follow the README's instructions!${NOCOLOR}"
 
 cat "${GITSRC}/.profile" >> "${HOME}/.profile"
 DOTPROFILE_SHLINE="[[ -f ~/.profile ]] && . ~/.profile"
 echo "$DOTPROFILE_SHLINE" >> "${HOME}/.bashrc"
-echo "$DOTPROFILE_SHLINE" >> "${HOME}/.zshrc"
 
 getpkg git
 git clone --depth=1 https://github.com/uiriansan/LainGrubTheme && cd LainGrubTheme && ./install.sh && ./patch_entries.sh

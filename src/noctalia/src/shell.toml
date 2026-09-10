@@ -1,0 +1,17 @@
+[shell]
+corner_radius_scale = 0.0
+button_borders = false
+input_borders = false
+popup_borders = false
+card_borders = false
+popup_shadows = false
+settings_window_translucent = true
+
+[shell.panel]
+transparency_mode = "opaque"
+borders = false
+shadow = false
+
+[notification]
+background_opacity = 1.0
+border = true

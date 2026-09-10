@@ -1,0 +1,12 @@
+set recolor true
+set recolor-darkcolor "#C1B48E"
+set recolor-lightcolor "#000000"
+set default-bg "#000000"
+set default-fg "#C1B48E"
+set statusbar-bg "#1A1A1A"
+set statusbar-fg "#C1B48E"
+set inputbar-bg "#000000"
+set inputbar-fg "#CE7688"
+set highlight-color "#5D333C"
+set highlight-active-color "#CE7688"
+set first-page-column 1:2

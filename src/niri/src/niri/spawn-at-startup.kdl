@@ -1,0 +1,6 @@
+spawn-sh-at-startup "blueman-applet"
+spawn-sh-at-startup "swww-daemon"
+spawn-sh-at-startup "swww img ~/.config/assets/media/anim/bg_dark_anim_0_08.gif"
+spawn-sh-at-startup "fish -c 'niri_startup'"
+spawn-at-startup "noctalia"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"

@@ -1,5 +1,5 @@
 cliphist
-nautilus
+thunar
 dunst
 easyeffects
 feh
@@ -25,9 +25,9 @@ rofi-calc
 rofi-emoji
 rofi-wayland
 slurp
+swww
 waybar
 wtype
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
-zsh

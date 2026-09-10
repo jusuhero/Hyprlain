@@ -1,0 +1,38 @@
+[bar]
+order = ["main"]
+
+[bar.default]
+position           = "top"
+enabled            = true
+auto_hide          = false
+reserve_space      = true
+layer              = "top"
+thickness          = 24
+background_opacity = 1.0
+border_width       = 0.0
+shadow             = false
+contact_shadow     = false
+radius             = 0
+radius_top_left    = 0
+radius_top_right   = 0
+radius_bottom_left = 0
+radius_bottom_right = 0
+margin_ends        = 0
+margin_edge        = 0
+padding            = 4
+widget_spacing     = 6
+hover_highlight    = true
+scale              = 1.0
+font_scale         = 1.0
+font_weight        = 700
+font_family        = "AdwaitaMono Nerd Font"
+capsule            = false
+
+start  = ["workspaces"]
+center = ["active_window"]
+end    = ["volume", "network", "clock", "tray", "session"]
+
+[widget.tray]
+drawer = true
+drawer_columns = 4
+drawer_item_size = 16

@@ -1,0 +1,33 @@
+layout {
+    gaps 5
+
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+
+    border {
+        width 2
+        active-color "#CE7688"
+        inactive-color "#1A1A1A"
+    }
+
+    focus-ring {
+        width 2
+        active-color "#CE7688"
+        inactive-color "#0000"
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#5D333C"
+    }
+}
